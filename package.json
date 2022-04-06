@@ -2,10 +2,10 @@
   "name": "nft-gallery",
   "version": "0.1.0",
   "description": "NFT Gallery",
-  "author": "miqueltrallero.c@gmail.com",
+  "author": "revat",
   "homepage": ".",
   "engines": {
-    "node": "14.17.3"
+    "node": "16.14.2"
   },
   "dependencies": {
     "@truffle/hdwallet-provider": "^2.0.4",
