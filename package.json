@@ -8,7 +8,6 @@
     "node": "16.14.2"
   },
   "dependencies": {
-    "@truffle/hdwallet-provider": "^2.0.4",
     "bootstrap": "^5.0.2",
     "ipfs-http-client": "^51.0.1",
     "react": "^17.0.2",
@@ -20,9 +19,7 @@
   "devDependencies": {
     "@openzeppelin/contracts": "^4.2.0",
     "@openzeppelin/test-helpers": "^0.5.12",
-    "dotenv": "^10.0.0",
-    "truffle": "^5.3.14",
-    "truffle-hdwallet-provider-privkey": "^0.3.0"
+    "dotenv": "^10.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
