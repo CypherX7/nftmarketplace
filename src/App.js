@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import { useContext, useEffect } from 'react';
 
 import web3 from './connection/web3';
 import Navbar from './components/Layout/Navbar';
@@ -9,6 +9,7 @@ import MarketplaceContext from './store/marketplace-context'
 import NFTCollection from './abis/NFTCollection.json';
 import NFTMarketplace from './abis/NFTMarketplace.json';
 import Footer from './components/Layout/Footer';
+
 
 const App = () => {
   const web3Ctx = useContext(Web3Context);
