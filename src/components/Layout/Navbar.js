@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 import Web3Context from "../../store/web3-context";
 import MarketplaceContext from "../../store/marketplace-context";
 import web3 from "../../connection/web3";
@@ -97,14 +97,14 @@ const Navbar = () => {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
+            <Link class="nav-link active" aria-current="page" to="/discover">
               Discover
-            </a>
+            </Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
+            <Link class="nav-link active" aria-current="page" to="/mint">
               Create Item
-            </a>
+            </Link>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
@@ -137,7 +137,7 @@ const Navbar = () => {
                 target="blank"
                 rel="noopener noreferrer"
               >
-                {web3Ctx.account}
+                {(String(web3Ctx.account)).slice(0,4) + "..." + (String(web3Ctx.account)).slice(-3)}
               </a>
             )}
             {!web3Ctx.account && (
