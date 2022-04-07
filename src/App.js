@@ -8,6 +8,7 @@ import CollectionContext from './store/collection-context';
 import MarketplaceContext from './store/marketplace-context'
 import NFTCollection from './abis/NFTCollection.json';
 import NFTMarketplace from './abis/NFTMarketplace.json';
+import Footer from './components/Layout/Footer';
 
 const App = () => {
   const web3Ctx = useContext(Web3Context);
@@ -135,6 +136,7 @@ const App = () => {
     <React.Fragment>
       {showNavbar && <Navbar />}
       {showContent && <Main />}
+      <Footer />
     </React.Fragment>
   );
 };
