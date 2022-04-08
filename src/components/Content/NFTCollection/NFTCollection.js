@@ -155,10 +155,10 @@ const NFTCollection = () => {
                               </div>
                               <div className="col-7 d-flex justify-content-end">
                                 <img
-                                  src={eth}
+                                  src={plooygon}
                                   width="25"
                                   height="25"
-                                  className="align-center float-start"
+                                  className="align-center float-start rounded me-2"
                                   alt="price icon"
                                 ></img>
                                 <p className="text-start">
