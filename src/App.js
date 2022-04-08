@@ -136,7 +136,7 @@ const App = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<React.Fragment>{showNavbar && <Navbar />}{showContent && <Main />}<Footer /></React.Fragment>} />
+                <Route path="/" element={<React.Fragment>{showNavbar && <Navbar />}{<Main />}<Footer /></React.Fragment>} />
                 <Route exact path="discover" element={<Discover />} />
                 <Route exact path="mint" element={<Mint />} />
             </Routes>

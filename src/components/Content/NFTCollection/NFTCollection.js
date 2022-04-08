@@ -1,5 +1,4 @@
 import { useContext, useRef, createRef } from "react";
-
 import web3 from "../../../connection/web3";
 import Web3Context from "../../../store/web3-context";
 import CollectionContext from "../../../store/collection-context";
