@@ -7,7 +7,6 @@ import MarketplaceContext from "../../../store/marketplace-context";
 import { formatPrice } from "../../../helpers/utils";
 import plooygon from "../../../assets/img/plooygon.png";
 
-
 const NFTCollection = () => {
   const web3Ctx = useContext(Web3Context);
   const collectionCtx = useContext(CollectionContext);
@@ -148,7 +147,7 @@ const NFTCollection = () => {
                                 <button
                                   onClick={cancelHandler}
                                   value={index}
-                                  className="btn btn-danger"
+                                  className="btn btn-danger more-btn"
                                 >
                                   CANCEL
                                 </button>
