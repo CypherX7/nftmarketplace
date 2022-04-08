@@ -1,4 +1,5 @@
 import React from "react";
+import { FaDiscord } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
                     </div>
                     <ul class="social-links">
                       <li>
-                        <a href="#" target="blank">
+                        <a href="https://www.facebook.com/sharer.php?u=https://burnandearn.io/" target="blank">
                           <span class="fa fa-facebook-f"></span>
                         </a>
                       </li>
@@ -27,18 +28,8 @@ const Footer = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#" target="blank">
-                          <span class="fa fa-google-plus"></span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" target="blank">
-                          <span class="fa fa-linkedin"></span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" target="blank">
-                          <span class="fa fa-instagram"></span>
+                        <a href="https://discord.com/invite/g4WWFDV9WK" target="blank">
+                          <FaDiscord/>
                         </a>
                       </li>
                     </ul>

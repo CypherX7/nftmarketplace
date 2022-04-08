@@ -5,7 +5,6 @@ import CollectionContext from "../../../store/collection-context";
 import MarketplaceContext from "../../../store/marketplace-context";
 import { formatPrice } from "../../../helpers/utils";
 import plooygon from "../../../assets/img/plooygon.png";
-import eth from "../../../assets/img/eth.png";
 
 const NFTCollection = () => {
   const web3Ctx = useContext(Web3Context);
@@ -147,17 +146,17 @@ const NFTCollection = () => {
                                 <button
                                   onClick={cancelHandler}
                                   value={index}
-                                  className="btn btn-danger"
+                                  className="btn btn-danger more-btn"
                                 >
                                   CANCEL
                                 </button>
                               </div>
                               <div className="col-7 d-flex justify-content-end">
                                 <img
-                                  src={eth}
+                                  src={plooygon}
                                   width="25"
                                   height="25"
-                                  className="align-center float-start"
+                                  className="align-center float-start rounded me-2"
                                   alt="price icon"
                                 ></img>
                                 <p className="text-start">
