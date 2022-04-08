@@ -7,6 +7,7 @@ import MarketplaceContext from "../../../store/marketplace-context";
 import { formatPrice } from "../../../helpers/utils";
 import eth from "../../../assets/img/eth.png";
 
+
 const NFTCollection = () => {
   const web3Ctx = useContext(Web3Context);
   const collectionCtx = useContext(CollectionContext);
@@ -76,7 +77,7 @@ const NFTCollection = () => {
   };
 
   return (
-    <section className="nftcard-sec py-5">
+    <section className="nftcard-sec pt-5">
       <div class="container">
         <div className="row py-5">
           <div class="col-12 section-heading text-center">
@@ -205,13 +206,6 @@ const NFTCollection = () => {
               </div>
             );
           })}
-        </div>
-        <div className="row text-center">
-          <div className="col-12 mb-3">
-            <button type="button" class="btn btn-explore more-btn mt-4">
-              Explore More
-            </button>
-          </div>
         </div>
       </div>
     </section>
