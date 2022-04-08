@@ -1,5 +1,5 @@
 import React from "react";
-import SlideOne from "../../img/homeslider.jpg";
+import SlideOne from "../../assets/img/homeslider.jpg";
 
 export default function Slider() {
   return (

@@ -78,7 +78,7 @@ p {
     color: #bbbbbb;
     padding: 50px 0 80px;
     border-bottom: 1px solid rgba(255,255,255,0.10);
-    background: url(../../img/map-pattern-footer.png) center 75% no-repeat;
+    background: url(../../assets/img/map-pattern-footer.png) center 75% no-repeat;
 }
 .main-footer .footer-widget {
     position: relative;
@@ -339,6 +339,10 @@ input:required, textarea:required {
     margin-bottom: 30px;
     color: #fff;
 }
+.service_single_content .collection-item img.card-img-top {
+    min-height: 150px;
+    height: 150px;
+}
 .service_single_content  .collection-item .collection_info {
     padding: 15px;
     overflow: hidden;
@@ -375,4 +379,80 @@ input:required, textarea:required {
 .more-btn:hover {
     background-position: right center;
     color: #fff;
+}
+
+
+/* breadcumb */
+
+.breadcumb-area {
+    position: relative;
+    z-index: 1;
+    height: 400px !important;
+    background: url(../../assets/img/bread.png) no-repeat center;
+    background-size: cover;
+}
+
+.breadcumb--con .title {
+    font-size: 42px;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+.breadcrumb {
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent !important;
+    border-radius: 0;
+}
+.breadcrumb-item, .breadcrumb-item.active, .breadcrumb-item > a {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: 0.5rem;
+    color: #6c757d;
+    content: "/";
+}
+
+/* How work section */
+
+.howworsec p {
+    font-size: 13px;
+}
+.pricing-item {
+    border-radius: 10px;
+    background-color: #0a1026;
+    position: relative;
+    border: 1px solid rgba(255,255,255,.25);
+    text-align: left;
+    padding: 10px 10px 10px;
+    margin: 0 0 30px;
+}
+.pricing-item:before {
+    content: "";
+    position: absolute;
+    width: 102.6%;
+    height: 101.3%;
+    top: -3px;
+    left: -3px;
+    border-radius: 15px;
+    z-index: -1;
+    background-image: -moz-linear-gradient(320deg,#eb3fa9 0,#395ff6 50%,#eb3fa9 100%);
+    background-image: linear-gradient(130deg,#eb3fa9,#395ff6 50%,#eb3fa9);
+}
+
+/* Founder */
+
+.founder-sec {
+    
+}
+.founder-sec  .card {
+    background-color: transparent;
+}
+.founder-sec .card .pricing-item img,
+.founder-sec .card .pricing-item,
+.founder-sec .card .pricing-item::before {
+    border-radius: 50%;
 }

@@ -9,8 +9,8 @@ import MarketplaceContext from './store/marketplace-context'
 import NFTCollection from './abis/NFTCollection.json';
 import NFTMarketplace from './abis/NFTMarketplace.json';
 import Footer from './components/Layout/Footer';
-import Discover from './components/Views/Discover';
-import Mint from './components/Views/Mint';
+import Discover from './Views/Discover';
+import Mint from './Views/Mint';
 const App = () => {
     const web3Ctx = useContext(Web3Context);
     const collectionCtx = useContext(CollectionContext);
@@ -136,7 +136,7 @@ const App = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="" element={<React.Fragment>{showNavbar && <Navbar />}{showContent && <Main />}<Footer /></React.Fragment>} />
+                <Route path="/" element={<React.Fragment>{showNavbar && <Navbar />}{showContent && <Main />}<Footer /></React.Fragment>} />
                 <Route exact path="discover" element={<Discover />} />
                 <Route exact path="mint" element={<Mint />} />
             </Routes>

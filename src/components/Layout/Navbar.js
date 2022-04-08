@@ -4,7 +4,7 @@ import Web3Context from "../../store/web3-context";
 import MarketplaceContext from "../../store/marketplace-context";
 import web3 from "../../connection/web3";
 import { formatPrice } from "../../helpers/utils";
-import logo from "../../img/logo.png";
+import logo from "../../assets/img/logo.png";
 
 const Navbar = () => {
   const [fundsLoading, setFundsLoading] = useState(false);
@@ -92,22 +92,22 @@ const Navbar = () => {
         </button>
         <ul className="navbar-nav ms-auto text-white">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
+            <Link class="nav-link active" aria-current="page" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li class="nav-item">
-            <Link class="nav-link active" aria-current="page" to="/discover">
+            <Link class="nav-link" aria-current="page" to="/discover">
               Discover
             </Link>
           </li>
           <li class="nav-item">
-            <Link class="nav-link active" aria-current="page" to="/mint">
+            <Link class="nav-link" aria-current="page" to="/mint">
               Create Item
             </Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
+            <a class="nav-link" aria-current="page" href="#">
               MyNFT
             </a>
           </li>
@@ -137,7 +137,9 @@ const Navbar = () => {
                 target="blank"
                 rel="noopener noreferrer"
               >
-                {(String(web3Ctx.account)).slice(0,4) + "..." + (String(web3Ctx.account)).slice(-3)}
+                {String(web3Ctx.account).slice(0, 4) +
+                  "..." +
+                  String(web3Ctx.account).slice(-3)}
               </a>
             )}
             {!web3Ctx.account && (

@@ -5,7 +5,7 @@ import Web3Context from "../../../store/web3-context";
 import CollectionContext from "../../../store/collection-context";
 import MarketplaceContext from "../../../store/marketplace-context";
 import { formatPrice } from "../../../helpers/utils";
-import eth from "../../../img/eth.png";
+import eth from "../../../assets/img/eth.png";
 
 const NFTCollection = () => {
   const web3Ctx = useContext(Web3Context);
@@ -79,22 +79,18 @@ const NFTCollection = () => {
     <section className="nftcard-sec py-5">
       <div class="container">
         <div className="row py-5">
-        <div class="col-12 section-heading text-center">
-          <div
-            class="dream-dots justify-content-center"
-          >
-            <span>Our Top Collections</span>
+          <div class="col-12 section-heading text-center">
+            <div class="dream-dots justify-content-center">
+              <span>Our Top Collections</span>
+            </div>
+            <h2>Popular Collections</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+              accumsan nisi Ut ut felis congue nisl hendrerit commodo.
+            </p>
           </div>
-          <h2>
-            Popular Collections
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-            accumsan nisi Ut ut felis congue nisl hendrerit commodo.
-          </p>
         </div>
-        </div>
-        <div className="row text-center">
+        <div className="row d-flex justify-content-center">
           {collectionCtx.collection.map((NFT, key) => {
             const index = marketplaceCtx.offers
               ? marketplaceCtx.offers.findIndex((offer) => offer.id === NFT.id)
@@ -108,101 +104,114 @@ const NFTCollection = () => {
 
             return (
               <div key={key} className="col-3 mb-3 service_single_content">
-                <div className="card collection-item">
-                  <img
-                    src={`https://ipfs.infura.io/ipfs/${NFT.img}`}
-                    className="card-img-top"
-                    alt={`NFT ${key}`}
-                  />
-                  <div className={"card-body collection_info"}>
-                    <h6 className="card-title text-start mb-3">{NFT.title}</h6>
-                    <p className="fw-light fs-6 text-start mb-4">{`${owner.substr(
-                      0,
-                      7
-                    )}...${owner.substr(owner.length - 7)}`}</p>
-                    {index !== -1 ? (
-                      owner !== web3Ctx.account ? (
-                        <div className="d-flex justify-content-between align-items-center">
-                          <div className="">
-                            <button
-                              onClick={buyHandler}
-                              value={index}
-                              className="btn btn-success more-btn"
-                            >
-                              BUY
-                            </button>
-                          </div>
-                          <div className="d-flex justify-content-start">
-                            <img
-                              src={eth}
-                              width="25"
-                              height="25"
-                              className="align-center float-start"
-                              alt="price icon"
-                            ></img>
-                            <p className="text-start m-0">
-                              <b>{`${price}`}</b>
-                            </p>
-                          </div>
-                        </div>
-                      ) : (
-                        <div className="row">
-                          <div className="d-grid gap-2 col-5 mx-auto">
-                            <button
-                              onClick={cancelHandler}
-                              value={index}
-                              className="btn btn-danger"
-                            >
-                              CANCEL
-                            </button>
-                          </div>
-                          <div className="col-7 d-flex justify-content-end">
-                            <img
-                              src={eth}
-                              width="25"
-                              height="25"
-                              className="align-center float-start"
-                              alt="price icon"
-                            ></img>
-                            <p className="text-start">
-                              <b>{`${price}`}</b>
-                            </p>
-                          </div>
-                        </div>
-                      )
-                    ) : owner === web3Ctx.account ? (
-                      <form
-                        className="row g-2"
-                        onSubmit={(e) => makeOfferHandler(e, NFT.id, key)}
-                      >
-                        <div className="col-5 d-grid gap-2">
-                          <button
-                            type="submit"
-                            className="btn btn-secondary more-btn"
+                <div class="pricing-item text-center">
+                  <div class="wraper">
+                    <div className="card collection-item mb-0">
+                      <img
+                        src={`https://ipfs.infura.io/ipfs/${NFT.img}`}
+                        className="card-img-top"
+                        alt={`NFT ${key}`}
+                      />
+                      <div className={"card-body collection_info"}>
+                        <h6 className="card-title text-start mb-3">
+                          {NFT.title}
+                        </h6>
+                        <p className="fw-light fs-6 text-start mb-4">{`${owner.substr(
+                          0,
+                          7
+                        )}...${owner.substr(owner.length - 7)}`}</p>
+                        {index !== -1 ? (
+                          owner !== web3Ctx.account ? (
+                            <div className="d-flex justify-content-between align-items-center">
+                              <div className="">
+                                <button
+                                  onClick={buyHandler}
+                                  value={index}
+                                  className="btn btn-success more-btn"
+                                >
+                                  BUY
+                                </button>
+                              </div>
+                              <div className="d-flex justify-content-start">
+                                <img
+                                  src={eth}
+                                  width="25"
+                                  height="25"
+                                  className="align-center float-start"
+                                  alt="price icon"
+                                ></img>
+                                <p className="text-start m-0">
+                                  <b>{`${price}`}</b>
+                                </p>
+                              </div>
+                            </div>
+                          ) : (
+                            <div className="row">
+                              <div className="d-grid gap-2 col-5 mx-auto">
+                                <button
+                                  onClick={cancelHandler}
+                                  value={index}
+                                  className="btn btn-danger"
+                                >
+                                  CANCEL
+                                </button>
+                              </div>
+                              <div className="col-7 d-flex justify-content-end">
+                                <img
+                                  src={eth}
+                                  width="25"
+                                  height="25"
+                                  className="align-center float-start"
+                                  alt="price icon"
+                                ></img>
+                                <p className="text-start">
+                                  <b>{`${price}`}</b>
+                                </p>
+                              </div>
+                            </div>
+                          )
+                        ) : owner === web3Ctx.account ? (
+                          <form
+                            className="row g-2"
+                            onSubmit={(e) => makeOfferHandler(e, NFT.id, key)}
                           >
-                            OFFER
-                          </button>
-                        </div>
-                        <div className="col-7">
-                          <input
-                            type="number"
-                            step="0.01"
-                            placeholder="ETH..."
-                            className="form-control"
-                            ref={priceRefs.current[key]}
-                          />
-                        </div>
-                      </form>
-                    ) : (
-                      <p>
-                        <br />
-                      </p>
-                    )}
+                            <div className="col-5 d-grid gap-2">
+                              <button
+                                type="submit"
+                                className="btn btn-secondary more-btn"
+                              >
+                                OFFER
+                              </button>
+                            </div>
+                            <div className="col-7">
+                              <input
+                                type="number"
+                                step="0.01"
+                                placeholder="ETH..."
+                                className="form-control"
+                                ref={priceRefs.current[key]}
+                              />
+                            </div>
+                          </form>
+                        ) : (
+                          <p>
+                            <br />
+                          </p>
+                        )}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             );
           })}
+        </div>
+        <div className="row text-center">
+          <div className="col-12 mb-3">
+            <button type="button" class="btn btn-explore more-btn mt-4">
+              Explore More
+            </button>
+          </div>
         </div>
       </div>
     </section>

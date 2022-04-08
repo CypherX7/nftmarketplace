@@ -12,33 +12,32 @@ const Footer = () => {
                   <h3 className="has-line-center">About Us</h3>
                   <div className="widget-content">
                     <div className="text">
-                      At the end of the day, going forward, a new normal that
-                      has evolved generation X is on the runway heading towards
-                      a streamlined cloud solution.
+                      Burn & Earn is the first ecosystem to reward you for
+                      burning
                     </div>
                     <ul class="social-links">
                       <li>
-                        <a href="#">
+                        <a href="#" target="blank">
                           <span class="fa fa-facebook-f"></span>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://twitter.com/burnandearnio" target="blank">
                           <span class="fa fa-twitter"></span>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="#" target="blank">
                           <span class="fa fa-google-plus"></span>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="#" target="blank">
                           <span class="fa fa-linkedin"></span>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="#" target="blank">
                           <span class="fa fa-instagram"></span>
                         </a>
                       </li>
@@ -70,7 +69,7 @@ const Footer = () => {
                   <h3 className="has-line-center">Newsletter</h3>
                   <div className="widget-content">
                     <div className="text">
-                      Stay Updated with our latest news. We promise not to spam
+                      Don’t miss our future updates! Get Subscribed Today!
                     </div>
                     <div className="newsletter-form">
                       <form method="post">
@@ -97,7 +96,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="auto-container">
             <div className="copyright-text">
-              Copyright ©. Converted to react.js by Mohmad Gamal
+            ©2018-2022 Burn & Earn - All Rights Reserved. Created by <a href="https://infoversetech.com/" target="blank">www.infoversetech.com</a>
             </div>
           </div>
         </div>
