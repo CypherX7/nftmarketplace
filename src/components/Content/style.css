@@ -388,7 +388,7 @@ input:required, textarea:required {
     position: relative;
     z-index: 1;
     height: 400px !important;
-    background: url(../../assets/img/bread.png) no-repeat center;
+    background: url(../../assets/img/backg.jpg) no-repeat center;
     background-size: cover;
 }
 
