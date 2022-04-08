@@ -6,7 +6,7 @@ const Footer = () => {
       <footer className="main-footer text-center">
         <div className="widgets-section padding-top-small padding-bottom-small">
           <div className="container">
-            <div className="row clearfix">
+            <div className="row clearfix d-flex justify-content-center">
               <div className="footer-column col-md-4 col-sm-6 col-xs-12">
                 <div className="footer-widget about-widget">
                   <h3 className="has-line-center">About Us</h3>
@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="footer-column col-md-4 col-sm-6 col-xs-12">
+              {/* <div className="footer-column col-md-4 col-sm-6 col-xs-12">
                 <div className="footer-widget contact-widget">
                   <h3 className="has-line-center">Contact Us</h3>
                   <div className="widget-content">
@@ -89,7 +89,8 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
+
             </div>
           </div>
         </div>

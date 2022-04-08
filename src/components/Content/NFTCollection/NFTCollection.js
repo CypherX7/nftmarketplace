@@ -5,7 +5,7 @@ import Web3Context from "../../../store/web3-context";
 import CollectionContext from "../../../store/collection-context";
 import MarketplaceContext from "../../../store/marketplace-context";
 import { formatPrice } from "../../../helpers/utils";
-import eth from "../../../assets/img/eth.png";
+import plooygon from "../../../assets/img/plooygon.png";
 
 
 const NFTCollection = () => {
@@ -84,11 +84,7 @@ const NFTCollection = () => {
             <div class="dream-dots justify-content-center">
               <span>Our Top Collections</span>
             </div>
-            <h2>Popular Collections</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-              accumsan nisi Ut ut felis congue nisl hendrerit commodo.
-            </p>
+            <h2>Discover, collect, and sell extraordinary NFTs</h2>
           </div>
         </div>
         <div className="row d-flex justify-content-center">
@@ -135,10 +131,10 @@ const NFTCollection = () => {
                               </div>
                               <div className="d-flex justify-content-start">
                                 <img
-                                  src={eth}
+                                  src={plooygon}
                                   width="25"
                                   height="25"
-                                  className="align-center float-start"
+                                  className="align-center float-start rounded me-2"
                                   alt="price icon"
                                 ></img>
                                 <p className="text-start m-0">

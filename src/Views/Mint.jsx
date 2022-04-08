@@ -7,7 +7,7 @@ const Mint = () => {
   return (
     <>
       <Navbar />
-      <Breadcrumb namePage="Create Item" title="Mint" />
+      <Breadcrumb namePage="Create NFT" />
       <MintForm />
       <Footer />
     </>

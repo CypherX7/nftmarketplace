@@ -1,10 +1,10 @@
-import Animi from "../../assets/img/benft.webp";
+import founder1 from "../../assets/img/founder1.webp";
 import founder2 from "../../assets/img/founder2.webp";
 import founder3 from "../../assets/img/founder3.webp";
 const Founders = (props) => {
   const FounderList = [
     {
-      FounderAvtar: Animi,
+      FounderAvtar: founder1,
       FounderName: "Frank Cassar",
       alt: "Frank Cassar",
       FounderPost: "CEO & Co-Founder",
@@ -42,10 +42,6 @@ const Founders = (props) => {
                 <span>--------</span>
               </div>
               <h2>Burn & Earn Founders</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.
-              </p>
             </div>
           </div>
         </div>

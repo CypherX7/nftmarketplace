@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import SlideOne from "../../assets/img/homeslider.jpg";
 
 export default function Slider() {
@@ -24,18 +25,26 @@ export default function Slider() {
                       <span className="gradient-t">Awesome NFTs</span>
                     </h2>
                     <p className="mb-4">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Eveniet dolorem blanditiis ad perferendis, labore delectus
-                      dolor adipisicing elit sit amet, adipisicing elit. Eveniet
-                      adipisicing elit.
+                      Burn & Earn has found a way to help Coin & token holders
+                      grow their main portfolio BURNING the total supply of a
+                      Popular Coin or Token by dedicating 70% of every sale to
+                      be burned. All NFT Owners will Vote on what popular coin
+                      gets burned monthly.{" "}
                     </p>
-                    <button
+                    <Link
+                      to="/discover"
                       type="button"
                       className="btn btn-explore more-btn me-3"
-                    >Explore More</button><button
-                    type="button"
-                    className="btn btn-explore more-btn"
-                  >Collect NFT</button>
+                    >
+                      Explore More
+                    </Link>
+                    <Link
+                      to="/mint"
+                      type="button"
+                      className="btn btn-explore more-btn"
+                    >
+                      Create NFT
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -7,7 +7,7 @@ const Discover = () => {
   return (
     <>
       <Navbar />
-      <Breadcrumb namePage="Discover" title="Discover" />
+      <Breadcrumb namePage="NFT Marketplace"/>
       <NFTCollection />
       <Footer />
     </>

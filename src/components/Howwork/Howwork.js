@@ -1,4 +1,5 @@
 import Animi from "../../assets/img/benft.webp";
+import { Link } from "react-router-dom";
 
 const Howwork = () => {
   return (
@@ -9,9 +10,13 @@ const Howwork = () => {
             <div class="pricing-item text-center">
               <div class="wraper">
                 <img src={Animi} className="img-fluid" />
-                <button type="button" class="btn btn-explore more-btn mt-4 mb-3">
+                <Link
+                  to="/discover"
+                  type="button"
+                  class="btn btn-explore more-btn mt-4 mb-3"
+                >
                   Explore More
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -72,9 +77,13 @@ const Howwork = () => {
             <div class="pricing-item text-center">
               <div class="wraper">
                 <img src={Animi} className="img-fluid" />
-                <button type="button" class="btn btn-explore more-btn mt-4 mb-3">
+                <Link
+                  to="/discover"
+                  type="button"
+                  class="btn btn-explore more-btn mt-4 mb-3"
+                >
                   Explore More
-                </button>
+                </Link>
               </div>
             </div>
           </div>
