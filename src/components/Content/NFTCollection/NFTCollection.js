@@ -1,12 +1,11 @@
 import { useContext, useRef, createRef } from "react";
-
 import web3 from "../../../connection/web3";
 import Web3Context from "../../../store/web3-context";
 import CollectionContext from "../../../store/collection-context";
 import MarketplaceContext from "../../../store/marketplace-context";
 import { formatPrice } from "../../../helpers/utils";
 import plooygon from "../../../assets/img/plooygon.png";
-
+import eth from "../../../assets/img/eth.png";
 
 const NFTCollection = () => {
   const web3Ctx = useContext(Web3Context);

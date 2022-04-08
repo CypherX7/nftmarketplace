@@ -11,29 +11,23 @@ import Founders from "../Founders/Founders";
 import { Link } from "react-router-dom";
 
 const Main = () => {
-  const collectionCtx = useContext(CollectionContext);
-  const marketplaceCtx = useContext(MarketplaceContext);
+    const collectionCtx = useContext(CollectionContext);
+    const marketplaceCtx = useContext(MarketplaceContext);
 
-  return (
-    <>
-      <Slider />
-      {!marketplaceCtx.mktIsLoading && <NFTCollection />}
-      <div className="text-center mb-4">
-        <Link
-          to="/discover"
-          type="button"
-          class="btn btn-explore more-btn mt-4"
-        >
-          Explore More
-        </Link>
-      </div>
-      {marketplaceCtx.mktIsLoading && <Spinner />}
-      <Howwork />
-      <Founders />
-      {/* {!collectionCtx.nftIsLoading && <MintForm />} */}
-      {collectionCtx.nftIsLoading && <Spinner />}
-    </>
-  );
+    return (
+        <>
+            <Slider />
+            {!marketplaceCtx.mktIsLoading && <NFTCollection />}
+            <div className="text-center mb-4">
+                <Link to="/discover"type="button" class="btn btn-explore more-btn mt-4">Explore More</Link>
+            </div>
+            {marketplaceCtx.mktIsLoading && <Spinner />}
+            <Howwork />
+            <Founders />
+            {/* {!collectionCtx.nftIsLoading && <MintForm />} */}
+            {collectionCtx.nftIsLoading && <Spinner />}
+        </>
+    );
 };
 
 export default Main;
