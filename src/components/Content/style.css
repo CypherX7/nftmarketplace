@@ -350,9 +350,11 @@ input:required, textarea:required {
     margin-bottom: 30px;
     color: #fff;
 }
+.service_single_content .collection-item .imageboxe {
+height: 200px;
+}
 .service_single_content .collection-item img.card-img-top {
-    min-height: 150px;
-    height: 150px;
+    height: 100%;
 }
 .service_single_content  .collection-item .collection_info {
     padding: 15px;

@@ -102,11 +102,14 @@ const NFTCollection = () => {
                 <div class="pricing-item text-center">
                   <div class="wraper">
                     <div className="card collection-item mb-0">
+                      <div className="imageboxe">
+
                       <img
                         src={`https://ipfs.infura.io/ipfs/${NFT.img}`}
                         className="card-img-top"
                         alt={`NFT ${key}`}
-                      />
+                        />
+                        </div>
                       <div className={"card-body collection_info"}>
                         <h6 className="card-title text-start mb-3">
                           {NFT.title}
@@ -190,7 +193,6 @@ const NFTCollection = () => {
                           </form>
                         ) : (
                           <p>
-                            <br />
                           </p>
                         )}
                       </div>
